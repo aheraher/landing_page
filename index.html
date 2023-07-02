@@ -10,7 +10,152 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&family=Ubuntu:wght@300;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">  
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    /* font-family:"Gilroy"; */
+    font-family: 'Oswald', sans-serif;
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+    
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    position: relative;
+}
+#left {
+    width: 40%;
+    height: 100%;
+    background-color: yellow;
+    position: relative;
+}
+
+#lnav {
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+#lnavr {
+ display: flex;
+ margin: 0px 25px;
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+#lnav i {
+    font-size: 20px;
+    font-weight: 500;
+}
+#lnavr a {
+    padding:0px 8px ;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+ #text {
+   /* background-color: rgb(9, 255, 0); */
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+
+
+}
+#text h2 {
+    font-size: 90px;
+    font-weight: 900;
+}
+#text p {
+    font-size: 14px;
+    opacity: .6;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom:20px ;
+}
+
+#text a {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+
+
+
+
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+#rtop {
+    width: 100%;
+    height: 50%;
+    /* background-color: royalblue; */
+    display: flex;
+}
+#rleft {
+    height: 100%;
+    width:55% ;
+    /* background-color: rgb(240, 116, 116); */
+    background-image: url(mae-mu-U1iYwZ8Dx7k-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#rright{
+    height: 100%;
+    width: 45%;
+    /* background-color: rgb(115, 0, 255); */
+    background-image: url(noah-buscher-8A7fD6Y5VF8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#rbottom {
+    width: 100%;
+    height: 50%;
+    /* background-color: orange; */
+    background-image: url(tangerine-newt-Ny5YFzSkf0E-unsplash.jpg);
+    background-size: cover;
+    background-position:center;
+
+}
+
+
+@media (max-width:500px)
+ {
+    #main {
+        flex-direction: column;
+    }
+    #left {
+        width: 100%;
+    }
+    #right {
+        width: 100%;
+        height: 100%;
+    }
+ }
+    </style>
 </head>
 
 
@@ -18,7 +163,7 @@
 <body>
     <div id="main">
         <div id="left">
-            <div id="lnav"> -- 
+            <div id="lnav"> <i class="ri-arrow-left-fill"></i>
                 <div id="lnavr"><a href="Home">Home</a><a href="About">About</a><a href="logo">logo</a></div> </div>
            <div id="text">
             <h2>Hello,</h2>
